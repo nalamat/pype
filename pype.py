@@ -1,7 +1,7 @@
 '''Object-oriented model for routing and online processing of data streams.
 
 
-This file is part of the EARS project <https://github.com/nalamat/ears>
+This file is part of Pype <https://github.com/nalamat/pype>
 Copyright (C) 2017-2021 Nima Alamatsaz <nima.alamatsaz@gmail.com>
 '''
 
@@ -16,7 +16,7 @@ import scipy        as sp
 import datetime     as dt
 from   collections  import defaultdict
 
-import misc
+import .misc
 
 
 log = logging.getLogger(__name__)
