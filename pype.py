@@ -16,7 +16,7 @@ import scipy        as sp
 import datetime     as dt
 from   collections  import defaultdict
 
-import .misc
+import misc
 
 
 log = logging.getLogger(__name__)
@@ -919,7 +919,7 @@ class SpikeGenerator(Generator):
         dt = (ns2-ns1)/self._fs
 
         counts = np.random.uniform(0, dt*1000/15, self._channels)
-        counts = np.round(counts).astype(np.int)
+        counts = np.round(counts).astype(int)
 
         for channel in range(self._channels):
             for i in range(counts[channel]):
