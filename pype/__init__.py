@@ -16,7 +16,7 @@ import scipy        as sp
 import datetime     as dt
 from   collections  import defaultdict
 
-import misc
+from . import misc
 
 
 log = logging.getLogger(__name__)
